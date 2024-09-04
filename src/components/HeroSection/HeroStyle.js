@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// eslint-disable-next-line 
 import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
@@ -154,6 +155,7 @@ export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 42px;
+  max-width: 63%;
   color: ${({ theme }) => theme.text_primary + 95};
 
   @media (max-width: 960px) {
@@ -190,7 +192,7 @@ export const ResumeButton = styled.a`
     &:hover {
         transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
+    box-shadow:  20px 20px 60px #1F2634;
     filter: brightness(1);
     }    
     

@@ -10,7 +10,6 @@ import {
   ButtonContainer,
   MobileIcon,
   MobileMenu,
-  MobileNavLogo,
   MobileLink,
 } from "./NavbarStyledComponent";
 import { FaLessThan, FaGreaterThan } from "react-icons/fa";
@@ -31,36 +30,36 @@ const Navbar = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "white",
+              color: "#F2F3F4",
               marginBottom: "20;",
               cursor: "pointer",
             }}
           >
             <FaLessThan
               style={{
-                color: "crimson",
+                color: "#854CE6",
                 fontSize: "1.5rem",
                 fontWeight: "bold",
               }}
             ></FaLessThan>
-            <Span style={{ color: "yourTextColor", fontSize: "1.3rem" }}>
+            <Span style={{ fontSize: "1.3rem" }}>
               Youssef
             </Span>
             <span
               style={{
-                color: "crimson",
+                color: "#854CE6",
                 fontSize: "1.32rem",
                 fontWeight: "bold",
               }}
             >
               {"/"}
             </span>
-            <Span style={{ color: "yourTextColor", fontSize: "1.3rem" }}>
+            <Span style={{ fontSize: "1.3rem" }}>
               Khalifa
             </Span>
             <FaGreaterThan
               style={{
-                color: "crimson",
+                color: "#854CE6",
                 fontSize: "1.5rem",
                 fontWeight: "bold",
               }}
