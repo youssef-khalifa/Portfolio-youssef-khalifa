@@ -175,6 +175,37 @@ export const experiences = [
     doc: "expcert.jpeg",
     link: "https://drive.google.com/file/d/1gcH83CohCxLs4QGfuR1TTdZf6rwzcUvx/view?usp=sharing",
   },
+  {
+    id: 1,
+    img: "https://armstrongedu.com/wp-content/uploads/2022/01/web_logo_s.png",
+    role: "SME-Curriculum Developer",
+    company: "Armstrong",
+    date: "sep 2024 - Present",
+    desc: "Developed Level 4 web development curriculum materials for the DECI initiative, focusing on backend development with Node.js and Express, and MongoDB for database management.Worked with experts to ensure content accuracy and alignment with educational standards.Created engaging materials that address various learning styles and emphasize practical applicationsof Node.js and Express.Delivered curriculum on time, adapting to project requirements as needed.Updated the curriculum based on stakeholder feedback and advancements in Node.js, Express, andMongoDB.",
+    skills: [
+      "Back-End Web Development",
+      "Curriculum Development",
+      "SME development",
+    ],
+    // doc: "expcert.jpeg",
+    // link: "https://drive.google.com/file/d/1gcH83CohCxLs4QGfuR1TTdZf6rwzcUvx/view?usp=sharing",
+  },
+
+  {
+    id: 2,
+    // img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    role: "Freelance Full Stack Developer",
+    company: "Self-Employed",
+    date: "Mar 2025 – Present",
+    desc: "Developing and delivering custom web solutions for companies and organizations, focusing on backend-heavy systems, scalable APIs, and production-ready applications. Collaborated directly with stakeholders to translate business requirements into technical implementations for clients including Magnum Egypt, Tulip Clinics, and Oxygen Academy.",
+    skills: [
+      "Backend Development",
+      "API Design",
+      "System Architecture",
+      "Client Solutions",
+      "Maintenance",
+    ],
+  },
 ];
 
 export const education = [
@@ -277,20 +308,6 @@ export const projects = [
     category: "web app",
     github: "https://github.com/youssef-khalifa/fast-react-pizza",
     webapp: "https://fast-react-pizza-v3.netlify.app/",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
   },
   {
     id: 3,
