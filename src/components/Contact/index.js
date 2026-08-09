@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Snackbar } from '@mui/material';
+import Snackbar from '@mui/material/Snackbar';
 
 const Container = styled.div`
 display: flex;

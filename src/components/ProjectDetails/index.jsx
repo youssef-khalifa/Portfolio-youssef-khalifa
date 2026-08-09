@@ -1,5 +1,10 @@
-import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
-import { Modal } from "@mui/material";
+// Imported by path, not from the package barrel: webpack doesn't tree-shake in
+// development, so `from "@mui/icons-material"` makes the dev server compile all
+// ~10,600 icon modules before it serves anything.
+import CloseRounded from "@mui/icons-material/CloseRounded";
+import GitHub from "@mui/icons-material/GitHub";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import Modal from "@mui/material/Modal";
 import React from "react";
 import styled from "styled-components";
 
