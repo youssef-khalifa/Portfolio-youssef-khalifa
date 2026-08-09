@@ -1,11 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-const float = keyframes`
-  0%   { transform: translate3d(0, 0, 0) rotate(0deg); }
-  50%  { transform: translate3d(0, -18px, 0) rotate(2.5deg); }
-  100% { transform: translate3d(0, 0, 0) rotate(0deg); }
-`;
-
 const drift = keyframes`
   0%   { transform: translate3d(-6%, -4%, 0) scale(1); }
   50%  { transform: translate3d(6%, 5%, 0) scale(1.12); }
@@ -22,13 +16,35 @@ export const Div = styled.div`
   pointer-events: none;
 `;
 
-/** Particle constellation. Sits behind everything. */
+/** Particle constellation and circuit mark share this surface. */
 export const Canvas = styled.canvas`
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   display: block;
+`;
+
+/**
+ * Carries the cursor parallax for the colour washes. It has to be a separate
+ * element from Aurora: a keyframe animation and a static rule both writing
+ * `transform` don't compose — the animation simply wins — so the two motions
+ * are split across two nodes.
+ */
+export const AuroraShift = styled.div`
+  position: absolute;
+  inset: 0;
+  transform: translate3d(
+    calc(var(--px, 0) * 14px),
+    calc(var(--py, 0) * 14px),
+    0
+  );
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 `;
 
 /** Two slow-moving colour washes that give the flat background some depth. */
@@ -51,53 +67,5 @@ export const Aurora = styled.div`
 
   @media (prefers-reduced-motion: reduce) {
     animation: none;
-  }
-`;
-
-/** The geometric circuit, parked on the right like the original. */
-export const Circuit = styled.div`
-  position: absolute;
-  top: 50%;
-  right: 4%;
-  width: 600px;
-  height: 500px;
-  margin-top: -250px;
-  animation: ${float} 12s ease-in-out infinite;
-  will-change: transform;
-
-  /* follows the cursor a little; --px/--py are set from JS */
-  transform: translate3d(
-    calc(var(--px, 0) * 18px),
-    calc(var(--py, 0) * 18px),
-    0
-  );
-  transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
-
-  svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-  }
-
-  @media (max-width: 960px) {
-    right: 50%;
-    width: 420px;
-    height: 380px;
-    margin-right: -210px;
-    margin-top: -190px;
-    opacity: 0.75;
-  }
-
-  @media (max-width: 640px) {
-    width: 320px;
-    height: 300px;
-    margin-right: -160px;
-    margin-top: -150px;
-    opacity: 0.6;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    animation: none;
-    transition: none;
   }
 `;
