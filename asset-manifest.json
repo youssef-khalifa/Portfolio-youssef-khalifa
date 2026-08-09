@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/Portfolio-youssef-khalifa/static/css/main.fbc3e695.css",
+    "main.js": "/Portfolio-youssef-khalifa/static/js/main.c6c9e2b0.js",
+    "index.html": "/Portfolio-youssef-khalifa/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.fbc3e695.css",
+    "static/js/main.c6c9e2b0.js"
+  ]
+}
