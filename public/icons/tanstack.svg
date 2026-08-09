@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="TQ">
+  <rect x="1" y="1" width="46" height="46" rx="12" fill="#854CE6" opacity="0.16"/>
+  <rect x="1" y="1" width="46" height="46" rx="12" fill="none" stroke="#854CE6" stroke-width="2"/>
+  <text x="24" y="24" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="20"
+        font-weight="700" fill="#854CE6" text-anchor="middle"
+        dominant-baseline="central">TQ</text>
+</svg>

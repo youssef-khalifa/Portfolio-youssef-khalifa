@@ -210,6 +210,7 @@ const Index = ({ openModal, setOpenModal }) => {
           <Image src={project?.image} />
           <Title>{project?.title}</Title>
           {project.date && <Date>{project.date}</Date>}
+          {project.role && <Date>{project.role}</Date>}
           <Tags>
             {project?.tags.map((tag) => (
               <Tag key={tag}>{tag}</Tag>
@@ -243,16 +244,25 @@ const Index = ({ openModal, setOpenModal }) => {
               </Members>
             </>
           )}
-          <ButtonGroup>
-            <Button dull href={project?.github} target="new">
-              View Code
-            </Button>
-            {project.webapp && (
-              <Button href={project.webapp} target="new">
-                View Live App
-              </Button>
-            )}
-          </ButtonGroup>
+          {(project.github || project.webapp) && (
+            <ButtonGroup>
+              {project.github && (
+                <Button dull href={project.github} target="new">
+                  View Code
+                </Button>
+              )}
+              {project.webapp && (
+                <Button href={project.webapp} target="new">
+                  View Live App
+                </Button>
+              )}
+            </ButtonGroup>
+          )}
+          {!project.github && !project.webapp && (
+            <Desc style={{ opacity: 0.7, fontSize: "14px" }}>
+              Private client codebase — source and deployment are not public.
+            </Desc>
+          )}
         </Wrapper>
       </Container>
     </Modal>

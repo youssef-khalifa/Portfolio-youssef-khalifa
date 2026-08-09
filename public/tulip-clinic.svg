@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" width="600" height="330" role="img" aria-label="Tulip Clinic">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1C1C27"/>
+      <stop offset="100%" stop-color="#171721"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#854CE6"/>
+      <stop offset="100%" stop-color="#5B2FB3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="330" fill="url(#bg)"/>
+  <circle cx="530" cy="60" r="150" fill="#854CE6" opacity="0.10"/>
+  <circle cx="70" cy="300" r="110" fill="#854CE6" opacity="0.07"/>
+  <rect x="0" y="0" width="8" height="330" fill="url(#accent)"/>
+  <rect x="44" y="52" width="66" height="66" rx="16" fill="#854CE6" opacity="0.18"/>
+  <rect x="44" y="52" width="66" height="66" rx="16" fill="none" stroke="#854CE6" stroke-width="1.5"/>
+  <text x="77" y="96" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="30"
+        font-weight="700" fill="#854CE6" text-anchor="middle">TC</text>
+  <text x="44" y="176" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="38"
+        font-weight="700" fill="#F2F3F4">Tulip Clinic</text>
+  <text x="44" y="212" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="19"
+        fill="#b1b2b3">Clinic booking API</text>
+  <rect x="44" y="242" width="72" height="4" rx="2" fill="#854CE6"/>
+</svg>

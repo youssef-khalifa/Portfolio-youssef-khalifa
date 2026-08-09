@@ -9,7 +9,6 @@ import {
   Title,
   Span,
   SubTitle,
-  ResumeButton,
 } from "./HeroStyle";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
@@ -39,9 +38,6 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
-              Check Resume
-            </ResumeButton>
           </HeroLeftContainer>
         </HeroInnerContainer>
       </HeroContainer>

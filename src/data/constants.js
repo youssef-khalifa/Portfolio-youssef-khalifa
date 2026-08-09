@@ -1,11 +1,18 @@
 export const Bio = {
   name: "Youssef Khalifa",
-  roles: ["Full Stack Developer", "Software Engineer", "Programmer"],
+  roles: [
+    "Full-Stack Developer",
+    "Backend Engineer",
+    "Node.js Developer",
+    "Next.js Developer",
+  ],
   description:
-    "MERN Stack Web Developer with a solid computer science background. Skilled in building scalable applications using MongoDB, Express.js, React.js, and Node.js. Experienced in client-server development, RESTful APIs, and database management. Proficient in crafting engaging UIs, managing DOM structures, and using Git. Strong problem-solver dedicated to high-quality, up-to-date web development.",
+    "Full-stack developer with 3+ years building and shipping production web applications end to end. I specialize in RESTful API development with Node.js, Express and TypeScript, MongoDB data modeling with Mongoose, and role-based access control — paired with React and Next.js front ends. I have delivered admin dashboards, e-learning platforms and booking systems for real clients, working in cross-functional teams and building bilingual English/Arabic products.",
   github: "https://github.com/youssef-khalifa",
-  resume:
-    "https://drive.google.com/file/d/1DQBL3rFPs2QIQ542xUBMSPXlAbF-ZmwT/view?usp=sharing",
+  // Resume button removed from the hero. To bring it back, put the current CV's
+  // share link here and restore <ResumeButton> in components/HeroSection/index.js
+  // (the styled component is still exported from HeroStyle.js).
+  resume: "",
   linkedin: "https://www.linkedin.com/in/youssef-khalifa/",
   twitter: "/",
   insta: "/",
@@ -60,6 +67,26 @@ export const skills = [
         image:
           "https://img.icons8.com/?size=100&id=3r4goG5xTGjJ&format=png&color=000000",
       },
+      {
+        name: "TanStack Query",
+        image: "icons/tanstack.svg",
+      },
+      {
+        name: "Zustand",
+        image: "icons/zustand.svg",
+      },
+      {
+        name: "React Hook Form",
+        image: "icons/hookform.svg",
+      },
+      {
+        name: "shadcn/ui",
+        image: "icons/shadcn.svg",
+      },
+      {
+        name: "Recharts",
+        image: "icons/recharts.svg",
+      },
     ],
   },
   {
@@ -102,6 +129,36 @@ export const skills = [
         name: "Supabase",
         image:
           "https://img.icons8.com/?size=100&id=grZaE9tjqDyr&format=png&color=000000",
+      },
+      {
+        name: "TypeScript",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "REST APIs",
+        image: "icons/rest.svg",
+      },
+      {
+        name: "JWT & RBAC",
+        image: "icons/jwt.svg",
+      },
+      {
+        name: "Mongoose",
+        image: "icons/mongoose.svg",
+      },
+      {
+        name: "Zod",
+        image: "icons/zod.svg",
+      },
+      {
+        name: "Swagger / OpenAPI",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/swagger/swagger-original.svg",
+      },
+      {
+        name: "Payload CMS",
+        image: "icons/payload.svg",
       },
     ],
   },
@@ -148,18 +205,103 @@ export const skills = [
         image:
           "https://img.icons8.com/?size=100&id=bp24DwGXJDyT&format=png&color=000000",
       },
+      {
+        name: "Vitest",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitest/vitest-original.svg",
+      },
+      {
+        name: "Playwright",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/playwright/playwright-original.svg",
+      },
+      {
+        name: "AWS (S3 / CloudFront)",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      },
     ],
   },
 ];
 
 export const experiences = [
   {
+    id: 10,
+    img: "icons/spatium.svg",
+    role: "Full-Stack Developer (Node.js / Next.js)",
+    company: "Spatium — Software Agency",
+    date: "Sep 2025 – Present",
+    desc: "Delivering production platforms for agency clients end to end — a recycling operations dashboard, a language-learning academy, a course marketplace and a clinic booking app. I own backend architecture on CycleX and Oxygen Academy: modular Express and TypeScript services, MongoDB schema design, database-driven role permissions and scheduled reporting pipelines. I build the Next.js front ends alongside the APIs, integrate the third-party surface clients depend on (payment checkout with refunds, AWS S3 storage, Google OAuth, transactional email), and keep the work handover-ready with Swagger/OpenAPI docs, Postman collections and automated test suites.",
+    skills: [
+      "Node Js",
+      "Express Js",
+      "TypeScript",
+      "MongoDB",
+      "Next Js",
+      "React Js",
+      "REST API Design",
+      "RBAC",
+      "Zod",
+      "Swagger / OpenAPI",
+      "AWS S3",
+      "Vitest",
+      "Playwright",
+    ],
+  },
+  {
+    id: 11,
+    img: "icons/medical-services.svg",
+    role: "System Administrator",
+    company: "Medical Services Company — Ministry of Electricity and Energy",
+    date: "Jun 2026 – Present",
+    desc: "Administering Medica CloudCare, the Health Information System (HIS) of record across the company's clinics — patient, physician and nursing records, appointment booking and medication data. I manage user accounts, roles and access permissions, support clinical staff on day-to-day system use, and diagnose and resolve network and connectivity faults on clinic workstations so clinical systems stay available throughout operating hours.",
+    skills: [
+      "Health Information Systems",
+      "System Administration",
+      "Access Control",
+      "Networking & Troubleshooting",
+      "Technical Support",
+    ],
+  },
+  {
+    id: 1,
+    img: "https://armstrongedu.com/wp-content/uploads/2022/01/web_logo_s.png",
+    role: "Backend Curriculum Developer (Subject Matter Expert)",
+    company: "Armstrong",
+    date: "Sep 2024 – Sep 2025",
+    desc: "Authored the backend web development curriculum for the DECI initiative — Node.js, Express.js and MongoDB from fundamentals through production API patterns — delivered as hands-on lessons, exercises and project briefs. Worked with subject matter experts and stakeholders to validate technical accuracy, revising modules on review and delivering all material on schedule.",
+    skills: [
+      "Back-End Web Development",
+      "Curriculum Development",
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Technical Writing",
+    ],
+  },
+  {
+    id: 2,
+    img: "icons/freelance.svg",
+    role: "Freelance Backend Developer",
+    company: "Self-Employed",
+    date: "Nov 2023 – Sep 2024",
+    desc: "Built and delivered REST APIs for client web and mobile products on Node.js, Express.js and MongoDB — authentication, file storage and third-party integrations — working directly with client teams from requirements through deployment and post-launch support.",
+    skills: [
+      "Backend Development",
+      "API Design",
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Client Solutions",
+    ],
+  },
+  {
     id: 0,
     img: "data:image/jpeg;base64,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",
-    role: "DB Administrator & Fullstack Web Developer",
-    company: "Ministry of Interior of Egypt.",
-    date: "oct 2022 - dec 2023",
-    desc: "Led soldier recruitment database management, focusing on data integrity, security, and performance. Troubleshot technical issues, conducted audits, and implemented backup strategies. Supervised a team of 10, increasing database uptime by 20% and improving query performance by 30%. Reduced manual effort by 40% through automation and migrated a legacy database to a modern platform, enhancing reliability and cutting costs by 15%. Facilitated effective communication within technical teams and across departments.",
+    role: "Software Engineer",
+    company: "Ministry of Interior, Egypt",
+    date: "Oct 2022 – Nov 2023",
+    desc: "Developed and maintained a web application for managing personnel records used in daily operational reporting, designing the database schema and the indexes behind its reporting and search. Automated repetitive manual data entry workflows and migrated the system from a legacy setup to a modern web platform, supporting deployment alongside internal technical teams.",
     skills: [
       "IT",
       "Postgres",
@@ -174,37 +316,6 @@ export const experiences = [
     ],
     doc: "expcert.jpeg",
     link: "https://drive.google.com/file/d/1gcH83CohCxLs4QGfuR1TTdZf6rwzcUvx/view?usp=sharing",
-  },
-  {
-    id: 1,
-    img: "https://armstrongedu.com/wp-content/uploads/2022/01/web_logo_s.png",
-    role: "SME-Curriculum Developer",
-    company: "Armstrong",
-    date: "sep 2024 - Present",
-    desc: "Developed Level 4 web development curriculum materials for the DECI initiative, focusing on backend development with Node.js and Express, and MongoDB for database management.Worked with experts to ensure content accuracy and alignment with educational standards.Created engaging materials that address various learning styles and emphasize practical applicationsof Node.js and Express.Delivered curriculum on time, adapting to project requirements as needed.Updated the curriculum based on stakeholder feedback and advancements in Node.js, Express, andMongoDB.",
-    skills: [
-      "Back-End Web Development",
-      "Curriculum Development",
-      "SME development",
-    ],
-    // doc: "expcert.jpeg",
-    // link: "https://drive.google.com/file/d/1gcH83CohCxLs4QGfuR1TTdZf6rwzcUvx/view?usp=sharing",
-  },
-
-  {
-    id: 2,
-    // img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-    role: "Freelance Full Stack Developer",
-    company: "Self-Employed",
-    date: "Mar 2025 – Present",
-    desc: "Developing and delivering custom web solutions for companies and organizations, focusing on backend-heavy systems, scalable APIs, and production-ready applications. Collaborated directly with stakeholders to translate business requirements into technical implementations for clients including Magnum Egypt, Tulip Clinics, and Oxygen Academy.",
-    skills: [
-      "Backend Development",
-      "API Design",
-      "System Architecture",
-      "Client Solutions",
-      "Maintenance",
-    ],
   },
 ];
 
@@ -235,6 +346,121 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 100,
+    title: "CycleX — Recycling Operations Platform",
+    date: "2026",
+    description:
+      "CycleX collects recyclable material from partner businesses but tracked inventory, deliveries and payments by hand, so partners had to ask staff what they had delivered and what they were owed. The platform gives staff live visibility over daily operations and gives every partner its own portal to verify activity and payments directly — removing manual report compilation and the disputes that came with it. I built the API the business runs on across 14 modules, automated the monthly reports payments are calculated from (with prices frozen at report creation so historical figures stay correct), and made one system safely serve four audiences with a full audit trail. The payment-critical logic sits behind a 953-test regression suite.",
+    image: "cyclex.svg",
+    tags: [
+      "TypeScript",
+      "Express Js",
+      "MongoDB",
+      "Next Js",
+      "React Js",
+      "TanStack Query",
+      "Tailwind CSS",
+      "RBAC",
+      "Zod",
+      "Vitest",
+      "Playwright",
+      "AWS S3",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "",
+    role: "Backend lead — team project",
+  },
+  {
+    id: 101,
+    title: "Oxygen Academy — Online Language School",
+    date: "2026",
+    description:
+      "An online academy teaching English, Spanish, Chinese and Italian. The platform carries a student from first visit to certificate — a placement test sets their level, they buy a course, study through video lessons and interactive practice, and progress is tracked until they qualify, in both English and Arabic. I built the backend behind the entire student journey across 15 modules, plus the assessment engine that sets a student's starting level, supporting five exercise types (multiple choice, fill-in-the-blank, drag-and-drop, matching and flashcards), each with its own grading rules and randomized sets so no two attempts match. Certificates are issued automatically as generated PDFs and enrolment is fully self-service through online card payment.",
+    image: "oxygen-academy.svg",
+    tags: [
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Next Js",
+      "React Js",
+      "Tailwind CSS",
+      "Paymob",
+      "AWS S3",
+      "Zod",
+      "i18n (EN/AR)",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "https://oxygenacademy.online/en",
+    role: "Backend development — team project",
+  },
+  {
+    id: 102,
+    title: "Magnum — Online Course Platform",
+    date: "2025 - 2026",
+    description:
+      "A live platform selling programming, Scratch and electronics courses to students in Egypt. It handles the full commercial path — browse, pay, watch live or recorded lessons, take quizzes and receive a certificate — while keeping paid video from being downloaded and redistributed. I modelled the content and commerce structure as 18 managed collections that staff can edit without a developer, secured paid video with time-limited signed URLs over a CDN, handled real money end to end including refunds and voided transactions, and built bilingual EN/AR routing with full right-to-left layout.",
+    image: "magnum.svg",
+    tags: [
+      "Next Js",
+      "Payload CMS",
+      "MongoDB",
+      "React Js",
+      "AWS S3",
+      "CloudFront",
+      "Paymob",
+      "next-intl",
+      "HLS Video",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "https://magnumegy.com",
+    role: "Team project",
+  },
+  {
+    id: 103,
+    title: "AI Workflow Engine",
+    date: "2026",
+    description:
+      "AI coding assistants produce inconsistent work and forget everything between sessions. This engine makes AI-assisted development repeatable and auditable: every task runs through a defined workflow where planning, review, security and testing are required stages, and every decision is written to disk so the work survives losing a session. I turned 20 recurring development tasks into defined workflows, gave each stage its own specialist reviewer with a dedicated checklist and severity rules, and built a cycle-handoff mechanism so multi-session work resumes exactly where it stopped. Layered configuration lets one engine enforce different standards per codebase. Designed and built solo, and now my standard delivery process on every client project.",
+    image: "ai-workflow-engine.svg",
+    tags: [
+      "Node Js",
+      "TypeScript",
+      "Claude Agent SDK",
+      "Markdown DSL",
+      "PowerShell",
+      "Bash",
+      "Developer Tooling",
+    ],
+    category: "developer tooling",
+    github: "",
+    webapp: "",
+    role: "Personal project — sole author",
+  },
+  {
+    id: 104,
+    title: "Tulip Clinic — Booking API",
+    date: "2024",
+    description:
+      "The backend for a clinic booking mobile app. Patients browse services and book appointments from their phone, while staff manage doctors, equipment and complaints from an admin side. Doctor availability is checked and scheduling conflicts detected before an appointment is confirmed to remove double-booking, visits are priced automatically from the services selected, sign-up and account recovery run over phone OTP, and patients are kept informed with push notifications for booking reminders and status changes.",
+    image: "tulip-clinic.svg",
+    tags: [
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Zod",
+      "Firebase Cloud Messaging",
+      "AWS S3",
+      "JWT",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "",
+    role: "Backend — client project",
+  },
   {
     id: 9,
     title: "The Wild Oasis Website",
